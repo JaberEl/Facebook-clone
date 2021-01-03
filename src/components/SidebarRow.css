@@ -1,0 +1,30 @@
+.sidebarRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.sidebarRow:hover {
+  background-color: #e8e8e8;
+  border-radius: 10px;
+}
+
+.sidebarRow > .MuiSvgIcon-root {
+  font-size: xx-large;
+  color: #1877f2;
+}
+
+.sidebarRow > h4 {
+  margin-left: 10px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=SidebarRow.css.map */
