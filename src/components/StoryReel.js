@@ -35,6 +35,12 @@ function StoryReel() {
         profileSrc="https://mir-s3-cdn-cf.behance.net/projects/404/d6991d86437115.Y3JvcCw4MDgsNjMyLDAsMA.jpg"
         image="https://cdn.dribbble.com/users/4188520/screenshots/13954472/media/095ea40fee94078f9fb1942ce17128dc.png?compress=1&resize=400x300"
       />
+            <Story
+        title="Mekavili"
+        profileSrc="https://mir-s3-cdn-cf.behance.net/projects/404/b0d52d86982647.Y3JvcCwzMzY3LDI2MzMsMCww.jpg"
+        image="https://cdn.dribbble.com/users/4188520/screenshots/14082979/media/c3f0d12c383882b6f75a622143dbc6eb.png?compress=1&resize=400x300"
+      />
+
     </div>
   );
 }

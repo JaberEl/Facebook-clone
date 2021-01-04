@@ -1,0 +1,30 @@
+.login {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+  //   border: 2px solid red;
+}
+
+.login > button {
+  position: absolute;
+  bottom: 300px;
+  width: 300px;
+  height: 40px;
+  color: white;
+  background-color: #1877f2;
+  font-weight: 600;
+  text-transform: capitalize !important;
+}
+
+.login > button:hover {
+  background-color: white;
+  color: #1877f2;
+}
+
+.login__logo > img {
+  margin-bottom: 200px;
+  object-fit: contain;
+  height: 150px;
+}
