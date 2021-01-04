@@ -1,0 +1,25 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  // padding: 20px 20px;
+  // justify-content: center;
+  // align-items: center;
+  flex: 0.6;
+  overflow-y: hidden;
+  // outline: 2px solid red;
+  position: relative;
+  padding: 20px 10px;
+}
+
+.child:first-child {
+  width: 100%;
+  // border: 2px solid red;
+}
+
+.child {
+  border: 2px solid red;
+}
+
+.feed__posts {
+  width: 100%;
+}

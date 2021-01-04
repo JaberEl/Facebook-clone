@@ -1,0 +1,11 @@
+.widgets {
+  display: block;
+  width: 337px;
+  padding: 20px 10px;
+}
+
+.widgets > iframe {
+  margin-right: 10px !important;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=Widgets.css.map */

@@ -1,7 +1,6 @@
 .sidebarRow {
   display: flex;
   align-items: center;
-  flex: 0.3;
   padding: 10px;
   margin: 0 10px;
   cursor: pointer;
@@ -21,4 +20,5 @@
 .sidebarRow > h4 {
   margin-left: 10px;
   font-weight: 600;
+  color: rgb(67, 67, 67);
 }

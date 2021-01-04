@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=Sidebar.css.map */
+.sidebar {
+  display: block;
+  width: 337px;
+  padding: 20px 10px;
+}
+/*# sourceMappingURL=Sidebar.css.map */

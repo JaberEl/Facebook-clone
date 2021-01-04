@@ -11,7 +11,7 @@ import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded';
 
 function Sidebar() {
   return (
-    <div>
+    <div className="sidebar">
       <SidebarRow
         src="https://cdn.dribbble.com/users/4188520/avatars/normal/9900dca40da904199c378fc64ed92c87.jpg?1580805196"
         title="Jaber EL FERKH"
