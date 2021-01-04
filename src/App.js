@@ -14,15 +14,16 @@ function App() {
       {!user ? (
         <Login />
       ) : (
-        <>
-          <Header />
-          <div className="app__body">
-            <Sidebar />
-            <Feed />
-            <Widgets />
-          </div>
-        </>
-      )}
+          <>
+            <Header />
+            <div className="app__body">
+              <Sidebar />
+              <Feed />
+              heeey
+              <Widgets />
+            </div>
+          </>
+        )}
     </div>
   );
 }
