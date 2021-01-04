@@ -14,6 +14,7 @@ function App() {
       {!user ? (
         <Login />
       ) : (
+<<<<<<< HEAD
           <>
             <Header />
             <div className="app__body">
@@ -24,6 +25,18 @@ function App() {
             </div>
           </>
         )}
+=======
+        <>
+          <Header />
+          <div className="app__body">
+            <Sidebar />
+            <Feed />
+            <Widgets />
+    heeeeeey
+          </div>
+        </>
+      )}
+>>>>>>> 958457b74a0d2baaf882c78daa2eb777dbc105dd
     </div>
   );
 }
