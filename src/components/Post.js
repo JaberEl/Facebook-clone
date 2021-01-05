@@ -4,17 +4,19 @@ import './Post.css';
 import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@material-ui/icons/ChatBubbleOutlineOutlined';
 import NearMeOutlinedIcon from '@material-ui/icons/NearMeOutlined';
+import { useStateValue } from '../StateProvider';
 
-function Post({ profilePic, image, username, timestamp, message }) {
+function Post({ image, timestamp, message }) {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="post">
       <div className="post__top">
-        <Avatar src={profilePic} className="post__avatar" />
+        <Avatar src={user.photoURL} className="post__avatar" />
         <div className="post__info">
-          <h3>{username}</h3>
-          {/* <p>{new Date(timestamp?.toDate()).toUTCString()}</p> */}
-          <p>{timestamp}</p>
-        </div>
+          <h3>{user.displayName}</h3>
+          <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
+      </div>
       </div>
 
       <div className="post__bottom">
@@ -41,7 +43,7 @@ function Post({ profilePic, image, username, timestamp, message }) {
           </div>
         </div>
         <div className="post__options--bottom">
-          <Avatar src={profilePic} />
+          <Avatar src={user.photoURL} />
           <form>
             <input type="text" placeholder="Write a comment" />
             <button>Button Hidden</button>

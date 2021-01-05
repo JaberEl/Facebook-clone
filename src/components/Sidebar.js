@@ -8,13 +8,16 @@ import SupervisedUserCircleRoundedIcon from '@material-ui/icons/SupervisedUserCi
 import EventAvailableRoundedIcon from '@material-ui/icons/EventAvailableRounded';
 import StarRoundedIcon from '@material-ui/icons/StarRounded';
 import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded';
+import { useStateValue } from '../StateProvider';
 
 function Sidebar() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="sidebar">
       <SidebarRow
-        src="https://cdn.dribbble.com/users/4188520/avatars/normal/9900dca40da904199c378fc64ed92c87.jpg?1580805196"
-        title="Jaber EL FERKH"
+        src={user.photoURL}
+        title={user.displayName}
       />
       <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
       <SidebarRow Icon={SupervisedUserCircleRoundedIcon} title="Groups" />
